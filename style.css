@@ -1,0 +1,457 @@
+/*
+filename: style.css
+authors: Jude Gualano, Camille Louis-Abeysinghe, Matthew Falcke, Sadman Sakhi Sachcha, Sadikin Ahmed Seam
+created: 23/03/2022
+last modified: 10/04/2022
+description: Style sheet for search engines website
+*/
+
+/* All */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    background-color: #f7f7f7;
+}
+
+/* Text */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2, h3, legend {
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+}
+
+input {
+    font-size: 1em;
+}
+
+h1 {
+    font: normal 500 1.5em Rubik, sans-serif;
+}
+
+/* Menu */
+
+#menu {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edf6ff;
+    padding: 0 150px;
+
+    box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.09);
+    position: relative;
+    z-index: 2;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu li {
+    list-style: none;
+    width: fit-content;
+    margin: 5px 10px;
+    border-bottom: 1px solid #edf6ff;
+
+    text-transform: uppercase;
+}
+
+#menu li a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: #689cf0;
+}
+
+#menu li a:hover {
+    border-bottom: 1px solid #689cf0;
+    cursor: pointer;
+}
+
+#menu p a {
+    text-decoration: none;
+}
+
+/*header {
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    color: #ebebeb;
+    font-size: 30px;
+    padding: 70px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.33);
+}*/
+
+main {
+    width: calc(100vw - 360px);
+    margin: 0 150px;
+}
+
+#logo a {
+    font-family: 'Francois One', sans-serif;
+    color: rgb(69, 107, 168);
+    font-size: 1.2em;
+}
+
+
+/* Footer */
+footer {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    background-color: #689cf0;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    box-shadow: 0px -4px 6px 1px rgba(0,0,0,0.09);
+    clear: both;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+}
+
+footer a:hover {
+    font-weight: 400;
+}
+
+/* Index */
+#index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(160, 199, 214, 0.80), rgba(161, 190, 212, 0.80)), url("images/bg-home.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    color: #ebebeb;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.33);
+    margin: 0px;
+    width: 100%;
+    height: calc(100vh - 160px);
+}
+
+#index p {
+    margin-top: 30px;
+}
+
+#index p a, #index p a:hover {
+    color: white;
+}
+
+
+/* Topic */
+
+#topic-header {
+    background-image: linear-gradient(to bottom, rgba(160, 199, 214, 0.80), rgba(161, 190, 212, 0.80)), url("images/bg-topic.jpg");
+}
+
+#topic-container h2,  #topic-sources h2 {
+    color: #689cf0;
+    margin-bottom: 30px;
+}
+
+#topic-container h3 {
+    color: #456ba8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#topic-container main {
+    margin: 0;
+    width: calc(70% - 195px);
+    left: 150px;
+    position: relative;
+}
+
+
+#topic-container aside {
+    width: calc(30% - 195px);
+    float: right;
+    position: relative;
+    right: 150px;
+    margin: 0;
+    border: 1.5px solid rgb(104, 156, 240, 0.50)
+}
+
+#topic-container, #topic-sources {
+    margin: 0;
+}
+
+#topic-sources {
+    margin-bottom: 30px;
+}
+
+#topic-sources a {
+    color: #1a6175;
+    text-decoration: none;
+}
+
+#topic-sources a:hover {
+    text-decoration: underline;
+}
+
+section, aside {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.09);
+    background-color: white;
+
+    margin: 30px 0;
+    padding: 30px;
+}
+
+
+#topic-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#topic-img img {
+    width: 40%;
+}
+
+#topic-img figcaption {
+    color: #5c5c5c;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+#topic-table {
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+#topic-table, #topic-table tr, #topic-table td, #topic-table th {
+    text-align: center;
+	border-collapse: collapse;
+    border: 1px solid #305ba1;}
+
+#topic-table tr, #topic-table td, #topic-table th {
+    padding: 5px;
+}
+
+#topic-table th {
+    background-color: #456ba8;
+    color: white;
+}
+
+#topic-table tr, #topic-table td {
+    background-color: #f0f5ff;
+}
+
+.move-inside {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* Quiz */
+
+#quiz-header {
+    background-image: linear-gradient(to bottom, rgba(160, 199, 214, 0.80), rgba(161, 190, 212, 0.80)), url("images/bg-quiz.jpg");
+}
+
+legend {
+    color: #689cf0;
+    font-size: 1.1em;
+}
+
+fieldset {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.09);
+    max-width: 100%;
+    background-color: white;
+
+    margin: 30px 0;
+    padding: 30px;
+}
+
+.question {
+    display: block;
+    color: #1a6175;
+    padding-bottom: 12px;
+}
+
+fieldset .quiz-row {
+    display: block;
+    margin: 8px 0;
+}
+
+.quiz-btn {
+    border-radius: 5px;
+    background-color: #689cf0;
+    border: none;
+    padding: 10px;
+    margin-left: 15px;
+    color: white;
+
+    justify-content: flex-end;
+    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.22);
+}
+
+.quiz-btn:hover {
+    cursor: pointer;
+    background-color: #5787d4;
+}
+
+#quiz-btn-group {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+fieldset td {
+    padding: 0 8px 0 0;
+}
+
+input[type=text], select, input[type=number] {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #a1b1b5;
+    color: #3e4547;
+    margin: 10px 0;
+}
+
+#inline-row {
+    display: flex;
+    align-items: center;
+}
+
+#inline-row p {
+    margin-left: 10px;
+}
+
+/* Enhancements */
+
+#enhancements-header {
+    background-image: linear-gradient(to bottom, rgba(160, 199, 214, 0.80), rgba(161, 190, 212, 0.80)), url("images/bg-enhancements.jpg");
+}
+
+#enhancements-container h2 {
+    color: #689cf0;
+    margin-bottom: 30px;
+}
+
+#enhancements-container h3 {
+    color: #456ba8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#enhancements-container em {
+    color: #5c5c5c;
+}
+
+
+#enhancements-container a {
+    color: #1a6175;
+    text-decoration: none;
+}
+
+#enhancements-container a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Viewport */
+@media only screen and (max-width: 900px) {
+
+    /* Menu */
+    #menu {
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    /* Index  */
+
+    #index h1 {
+        margin-top: 30px;
+    }
+
+    #index iframe {
+        width: calc(100vw - 50px);
+        height: 350px;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer p:first-child {
+        margin-bottom: 10px;
+    }
+
+    #index {
+        height: calc(100vh - 341px);
+    }
+
+    /* Quiz */
+
+    main {
+        margin: 0 30px;
+        width: calc(100% - 60px);
+    }
+
+    /* Topic */
+
+    #topic-container main {
+        width: 100%;
+        left: 0;
+        position: relative;
+    }
+
+    #topic-container section, #topic-container aside {
+        margin: 30px 0;
+        width: calc(100% - 120px);
+        left: 30px;
+        position: relative;
+
+    }
+
+    #topic-container aside {
+        float: none;
+    }
+
+  }

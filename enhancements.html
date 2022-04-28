@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enhancements</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Enhancements made to website"/>
+    <meta name="keywords" content="Search engine, Google, searching, enhancements"/>
+    <meta name="author" content="Jude Gualano"/>
+    <!-- Styling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Jura:wght@600&family=Merriweather&family=Rubik:wght@400;500&family=Source+Sans+Pro:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <menu id="menu">
+        <p id="logo"><a href="index.php">Search Engines</a></p>
+            <li><a href="topic.php">Topic</a></li>
+            <li><a href="quiz.php">Quiz</a></li>
+            <li><a href="enhancements.html">Enhancements</a></li>
+    </menu>
+    
+    <header id="enhancements-header">
+        <h1>Enhancements</h1>
+    </header>
+
+    <main id="enhancements-container">
+        <section>
+            <h2>Flexbox</h2>
+            <p><strong>Flexbox</strong> is a way to layout elements in rows or columns that extends into available space or fills an area on a page.</p>
+            <br>
+            <p>This enhancement overcomes the irritating limitations of arranging items on a page, such as via floating, and enables greater flexibility. Flexbox is not taught in the Computing Technology Inquiry Project unit and reaches beyond the basic requirements because of the numerous behaviours applied with this method.</p>
+            <br>
+            <p>Implementing flexbox in CSS requires <em>display: flex;</em> to be included in the parent container. Child elements can be arranged as <em>flex-direction: row;</em> or <em>flex-direction: column;</em> by specifying this in the container element. A useful option is to centre elements which may be achieved in a few ways. <em>justify-content: center;</em> can be used to align the content horizontally in the container and <em>align-items: center;</em> allows vertical centring in the container. Other flexbox options exist including changing the order of items and wrapping content.</p>
+            <br>
+            <p>Flexbox has been implemented with guidance from <a href="https://jonitrythall.com/content/flexboxsheet.pdf">Flexbox Sheet (Joni Trythall)</a>.</p>
+
+            <h3>Pages Using Flexbox</h3>
+            <ul class="move-inside">
+                <a href="index.php"><li>Index (Home)</li></a>
+                <a href="topic.php"><li>Topic</li></a>
+                <a href="quiz.php"><li>Quiz</li></a>
+                <a href="enhancements.html"><li>Enhancements</li></a>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Responsive Design</h2>
+            <p><strong>Media queries</strong> are used to change elements on the page based on the user’s device type or from certain characteristics, namely the viewport width.</p>
+            <br>
+            <p>Including media queries as an enhancement allows the site to be used with different viewports effectively regardless of whether the website is viewed on a computer, tablet, or mobile device browser. This technique has not been taught in the unit and expands the basic requirements of the project because items on the site are rearranged and modified to tailor the user’s device, which in turn ensures legibility is maintained.</p>
+            <br>
+            <p>To implement responsive web design, the viewport is set for all HTML pages so the browser can fit content appropriately on the user’s device, by using: <em>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</em>. A media query is then used in CSS to define changes to elements when the browser window is lower than a specified measurement. For instance, <em>@media only screen and (max-width: 900px)</em> specifies that style changes will occur when the browser’s width is lower than 900px. Element style changes are specified inside the media query.</p>
+            <br>
+            <p>Media queries have been implemented with guidance from <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">Responsive Web Design Media Queries (w3schools.com)</a>.</p>
+
+            <h3>Pages Using Responsive Design</h3>
+            <ul class="move-inside">
+                <a href="index.php"><li>Index (Home)</li></a>
+                <a href="topic.php"><li>Topic</li></a>
+                <a href="quiz.php"><li>Quiz</li></a>
+                <a href="enhancements.html"><li>Enhancements</li></a>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sources</h2>
+            <ul class="move-inside">
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"><li>Flexbox | MDN (mozilla.org)</li></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"><li>Using Media Queries | MDN (mozilla.org)</li></a>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by The Debuggers:</p>
+        <p><a href="mailto:103990049@student.swin.edu.au">Jude Gualano</a></p>
+        <p><a href="mailto:103981441@student.swin.edu.au">Camille Louis-Abeysinghe</a></p>
+        <p><a href="mailto:103058400@student.swin.edu.au">Matthew Falcke</a></p>
+        <p><a href="mailto:103523995@student.swin.edu.au">Sadman Sakhi Sachcha</a></p>
+        <p><a href="mailto:103838767@student.swin.edu.au">Sadikin Ahmed Seam</a></p>
+    </footer>
+
+</body>
+</html>
