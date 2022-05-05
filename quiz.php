@@ -21,10 +21,7 @@
     <header id="quiz-header">
         <h1>Quiz</h1>
     </header>
-    <?php
-        include 'header.inc';
-    ?>
-
+    
     <main>
         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
             <fieldset>
